@@ -9,7 +9,3 @@ Code release is not guaranteed; if released, we expect it around June 2024.
 ## Stay Updated
 
 To receive the latest updates and notifications regarding the potential code release, please consider "watching" this repository. By doing so, you'll be promptly informed of any releases or updates made here.
-
-Bests,
-Jac
-
