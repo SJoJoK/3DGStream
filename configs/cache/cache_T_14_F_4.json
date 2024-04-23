@@ -1,0 +1,41 @@
+{
+    "loss": {
+        "otype": "RelativeL2Luminance"
+    },
+    "optimizer": {
+        "otype": "Adam",
+        "learning_rate": 1e-3,
+        "beta1": 0.9,
+        "beta2": 0.99,
+        "epsilon": 1e-15,
+        "l2_reg": 1e-6
+    },
+    "encoding": {
+                "otype": "HashGrid",
+                "n_dims_to_encode": 3,
+                "per_level_scale": 2.0,
+                "log2_hashmap_size": 14,
+                "base_resolution": 16,
+                "n_levels": 16,
+                "n_features_per_level": 4
+    },
+    "network": {
+        "otype": "FullyFusedMLP",
+        "activation": "ReLU",
+        "output_activation": "None",
+        "n_neurons": 64,
+        "n_hidden_layers": 2
+    },
+    "others": {
+        "otype": "EMA",
+        "decay": 0.99,
+        "nested": {
+            "otype": "Adam",
+            "learning_rate": 1e-2,
+            "beta1": 0.9,
+            "beta2": 0.99,
+            "epsilon": 1e-15,
+            "l2_reg": 1e-6
+        }
+    }
+}
