@@ -6,11 +6,13 @@ Please refer to [Project Page](https://sjojok.github.io/3dgstream) for more info
 
 ## Tiny 3DGStream Viewer
 
-We have released an open-source [3DGStream Viewer](https://github.com/SJoJoK/3DGStreamViewer) based on a community [3DGS Viewer](https://github.com/limacv/GaussianSplattingViewer) , which has slightly slower render speed (~160 FPS on NVIDIA RTX 2060, havn't test on 3090 yet) but is highly configurable.
+We have released an open-source [3DGStream Viewer](https://github.com/SJoJoK/3DGStreamViewer) based on a community [3DGS Viewer](https://github.com/limacv/GaussianSplattingViewer).
 
-Together with the viewer, we will release some "Free-Viewpoint Videos" of the N3DV dataset constructed by 3DGStream, which can be "watched" by the viewer.
+## Pre-Release Code
 
-Released FVVs: [Flame Steak](https://drive.google.com/file/d/1AXDqSzSaT_uNu_DhKeSmZmrBAfuOhWYY/view?usp=drive_link) , ...
+We have created a private repository containing an unpolished version of our code as pre-release code, along with a simple guide in README for researchers to use. If you are interested in accessing this repository, please send an email from your affiliated institutional email address to csjk@zju.edu.cn with a brief explanation of your need (e.g., working on a submission for NeurIPS or SIGGRAPH Asia) and your github account (username, full name, and/or email). We will provide you with the link to the repository and access permissions.
+
+Please note that this pre-release is intended for urgent research needs only. If your work is not time-sensitive, we recommend waiting for the code release scheduled for May. The upcoming release will have refinements that are not present in this pre-release, and using the current version might lead to confusion due to mismatches with the improved codebase.
 
 ## Release Roadmap
 
@@ -20,6 +22,10 @@ Released FVVs: [Flame Steak](https://drive.google.com/file/d/1AXDqSzSaT_uNu_DhKe
       
 - [ ] Unorganized code with few instructions (around May 2024)
 
+
+    - [x] Pre-Release
+
+      
 - [ ] Organized code with instructions (around June 2024)
 
 - [ ] 3DGStream v2 (hopefully in 2025)
