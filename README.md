@@ -204,12 +204,16 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
        2. Profiling `query_ntc_eval` using *scripts/cache_profile.ipynb*.
 
        3. Summing the measurements for an estimated total rendering speed, like this:
-
-          ![RES](assets/profile_res.png)
+          
+            | Step             | Overhead(ms) | FPS  |
+            | ---------------- | ------------ | ---- |
+            | Render w/o NTC   | 2.56         | 390  |
+            | + Query NTC      | 0.62         |      |
+            | + Transformation | 0.02         |      |
+            | + SH Rotation    | 1.46         |      |
+            | Total            | 4.46         | 215  |
 
           To isolate the overhead for each process, you can comment out the other parts of the code.
-
-          (The overhead of query is related to the number of 3dgs and will vary with it.)
 
      * **[3DGStreamViewer](https://github.com/SJoJoK/3DGStreamViewer)**
 
