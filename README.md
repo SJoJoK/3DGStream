@@ -178,7 +178,7 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
    * Use `--eval` when you have a test/train split. You may need to review and modify `readColmapSceneInfo` in *scene/dataset_renders.py* accordingly.
    * Specify `--resolution` only when necessary, as reading and resizing large images is time-consuming. Consider resizing the images before 3DGStream processes them.
    * About NTC:
-      - `--ntc_conf`: Set this to the path of the NTC configuration file (see *scripts/cache_warmup.ipynb*, *configs/cache/* and [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn)).
+      - `--ntc_conf_path`: Set this to the path of the NTC configuration file (see *scripts/cache_warmup.ipynb*, *configs/cache/* and [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn)).
       - `--ntc_path`: Set this to the path of the pre-warmed parameters (see *scripts/cache_warmup.ipynb*).
 
    You can run
