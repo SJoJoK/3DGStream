@@ -122,11 +122,13 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
       You can run
 
-      `python scripts/copy_cams.py --source test/flame_steak_suite/frame000000 --scene dataset/flame_steak`
+      ```bash
+      python scripts/copy_cams.py --source test/flame_steak_suite/frame000000 --scene dataset/flame_steak`
+      ```
 
       to prepare for conducting experiment on the `flame steak` scene.
 
-   3. Undistort the images by `python convert_frames.py -s <scene> --resize`, then the dataset will end-up like this:
+   4. Undistort the images by `python convert_frames.py -s <scene> --resize`, then the dataset will end-up like this:
 
       ```
       <scene>
@@ -146,7 +148,9 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
       You can run
 
-      `python convert_frames.py --scene dataset/flame_steak --resize`
+      ```bash
+      python convert_frames.py --scene dataset/flame_steak --resize
+      ```
 
       to prepare for conducting experiment on the `flame steak` scene.
 
@@ -161,7 +165,9 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
    Everything is set up, just run
 
-   `python train_frames.py --read_config --config_path <config_path> -o <output_dir> -m <init_3dgs_dir>  -v <scene> --image <images_dir> --first_load_iteration <first_load_iteration>`
+   ```bash
+   python train_frames.py --read_config --config_path <config_path> -o <output_dir> -m <init_3dgs_dir>  -v <scene> --image <images_dir> --first_load_iteration <first_load_iteration>
+   ```
 
    Parameter explanations:
    * `<config_path>`: We provide a configuration file containing all necessary parameters, available at *test/flame_steak_suite/cfg_args.json*.
@@ -177,11 +183,13 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
    You can run
 
-   `python train_frames.py --read_config --config_path test/flame_steak_suite/cfg_args.json -o output/Code-Release -m test/flame_steak_suite/flame_steak_init/ -v <scene> --image images_2 --first_load_iteration 15000 --quiet`
+   ```bash
+   python train_frames.py --read_config --config_path test/flame_steak_suite/cfg_args.json -o output/Code-Release -m test/flame_steak_suite/flame_steak_init/ -v <scene> --image images_2 --first_load_iteration 15000 --quiet
+   ```
 
    to conduct the experiments on the `flame steak` scene.
 
-7. Evaluate Performance
+8. Evaluate Performance
 
    * PSNR: Average among all test images
 
