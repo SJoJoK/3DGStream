@@ -146,7 +146,7 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
       You can run
 
-      `python convert_frames.py --scene dataset/flame_steak`
+      `python convert_frames.py --scene dataset/flame_steak --resize`
 
       to prepare for conducting experiment on the `flame steak` scene.
 
