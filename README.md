@@ -57,7 +57,7 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
    You can use *test/flame_steak_suite/frame000000* for experiment on the `flame steak` scene.
 
-3. Follow the instructions in [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) to get a **high-quality** init_3dgs (sh_degree = 1) from the above colmap dataset, which will end-up like:
+3. Follow the instructions in [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) to get a **high-quality** init_3dgs (sh_degree = 1, i.e., train with `--sh_degree 1`) from the above colmap dataset, which will end-up like:
 
    ```
       <init_3dgs_dir>
