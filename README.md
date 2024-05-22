@@ -33,8 +33,19 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
    You can use the same Python environment configured for gaussian-splatting. However, it is necessary to install tiny-cuda-nn and reinstall the submodules/diff-gaussian-rasterization by running `pip install submodules/diff-gaussian-rasterization`. Additionally, we recommend using PyTorch version 2.0 or higher for enhanced performance, as we utilize `torch.compile`. If you are using a PyTorch version lower than 2.0, you may need to comment out the lines of the code where `torch.compile` is used.
 
+   The code is tested on:
+   
+    ```
+    OS: Ubuntu 22.04
+    GPU: RTX A6000/3090
+    Driver: 535.86.05
+    CUDA: 11.8
+    Python: 3.8
+    Pytorch: 2.0.1+cu118
+    tinycudann: 1.7
+    ```
 
-2. Follow the instructions in [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) to create your COLMAP dataset based on the images of the timestep 0 , which will end-up like: 
+3. Follow the instructions in [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) to create your COLMAP dataset based on the images of the timestep 0 , which will end-up like: 
 
    ```
    <frame000000>
@@ -57,7 +68,7 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
    You can use *test/flame_steak_suite/frame000000* for experiment on the `flame steak` scene.
 
-3. Follow the instructions in [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) to get a **high-quality** init_3dgs (sh_degree = 1, i.e., train with `--sh_degree 1`) from the above colmap dataset, which will end-up like:
+4. Follow the instructions in [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) to get a **high-quality** init_3dgs (sh_degree = 1, i.e., train with `--sh_degree 1`) from the above colmap dataset, which will end-up like:
 
    ```
       <init_3dgs_dir>
@@ -73,7 +84,7 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
    Since the training of 3DGStream is orthogonal to that of init_3dgs, you are free to use any method that enhances the quality of init_3dgs, provided that the resulting ply file remains compatible with the original [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting).
 
-4. Prepare the multi-view video dataset:
+5. Prepare the multi-view video dataset:
 
    1. Extract the frames and organize them like this:
 
@@ -154,14 +165,14 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
       to prepare for conducting experiment on the `flame steak` scene.
 
-5. Warm-up the NTC
+6. Warm-up the NTC
 
    Please refer to the *scripts/cache_warmup.ipynb* notebook to perform a warm-up of the NTC.
 
    For better performance, it's crucial to define the corners of the Axis-Aligned Bounding Box that approximately enclose your scene. For instance, in a scene like `flame salmon`, the AABB should encompass the room while excluding any external landscape elements. To set the coordinates of the AABB corners, you should directly hard-code them into the `get_xyz_bound` function.
 
 
-6. GO!
+7. GO!
 
    Everything is set up, just run
 
