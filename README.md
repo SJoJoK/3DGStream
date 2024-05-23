@@ -134,7 +134,7 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
       You can run
 
       ```bash
-      python scripts/copy_cams.py --source test/flame_steak_suite/frame000000 --scene dataset/flame_steak`
+      python scripts/copy_cams.py --source test/flame_steak_suite/frame000000 --scene dataset/flame_steak
       ```
 
       to prepare for conducting experiment on the `flame steak` scene.
