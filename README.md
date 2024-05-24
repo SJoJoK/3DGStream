@@ -171,6 +171,7 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
    For better performance, it's crucial to define the corners of the Axis-Aligned Bounding Box that approximately enclose your scene. For instance, in a scene like `flame salmon`, the AABB should encompass the room while excluding any external landscape elements. To set the coordinates of the AABB corners, you should directly hard-code them into the `get_xyz_bound` function.
 
+   **If you encounter issues that the output is NaN, please refer to https://github.com/SJoJoK/3DGStream/issues/16.**
 
 7. GO!
 
