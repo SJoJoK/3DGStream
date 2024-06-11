@@ -6,8 +6,8 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 > [Jiakai Sun](https://sjojok.github.io), Han Jiao, [Guangyuan Li](https://guangyuankk.github.io/), Zhanjie Zhang, Lei Zhao, Wei Xing  
 > *CVPR 2024 __Highlight__*  
 > [Project](https://sjojok.github.io/3dgstream)
-| [Paper](https://arxiv.org/pdf/2403.01444.pdf)
-| [Suppl.](https://drive.google.com/file/d/18x3oNsFa3UtG1WqndeKLTjEMluxyRBJ6/view)
+| [Paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Sun_3DGStream_On-the-Fly_Training_of_3D_Gaussians_for_Efficient_Streaming_of_CVPR_2024_paper.pdf)
+| [Suppl.](https://openaccess.thecvf.com/content/CVPR2024/supplemental/Sun_3DGStream_On-the-Fly_Training_CVPR_2024_supplemental.pdf)
 | [Bibtex](##Bibtex)
 | [Viewer](https://github.com/SJoJoK/3DGStreamViewer)
 
@@ -249,10 +249,12 @@ We acknowledge the foundational work of [gaussian-splatting](https://github.com/
 
 ## Bibtex
 ```
-@article{sun20243dgstream,
-  title={3dgstream: On-the-fly training of 3d gaussians for efficient streaming of photo-realistic free-viewpoint videos},
-  author={Sun, Jiakai and Jiao, Han and Li, Guangyuan and Zhang, Zhanjie and Zhao, Lei and Xing, Wei},
-  journal={arXiv preprint arXiv:2403.01444},
-  year={2024}
+@InProceedings{sun20243dgstream,
+    author    = {Sun, Jiakai and Jiao, Han and Li, Guangyuan and Zhang, Zhanjie and Zhao, Lei and Xing, Wei},
+    title     = {3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming of Photo-Realistic Free-Viewpoint Videos},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {20675-20685}
 }
 ```
