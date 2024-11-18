@@ -165,6 +165,9 @@ Official repository for the paper "3DGStream: On-the-fly Training of 3D Gaussian
 
       to prepare for conducting experiment on the `flame steak` scene.
 
+      **For multi-view datasets with distortion such as [MeetRoom](https://github.com/AlgoHunt/StreamRF), undistortion is critical to improving the reconstruction quality.
+      We followed the settings of the original [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) and performed undistortion.**
+      
 6. Warm-up the NTC
 
    Please refer to the *scripts/cache_warmup.ipynb* notebook to perform a warm-up of the NTC.
